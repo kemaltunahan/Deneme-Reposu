@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Yapısı</title>
+    <style>
+        body {
+            color: black;
+            background: white;
+        }
+
+        .body {
+            color: white;
+            background: black;
+        }
+
+        #body {
+            color: black !important;
+            background: yellow;
+        }
+
+        div {
+            color: teal !important;
+            background: red !important;
+        }
+
+        .div1 {
+            color: red;
+            background: teal;
+        }
+
+        #div1 {
+            color: yellow;
+            background: violet;
+        }
+
+        .div2 {
+            color: coral;
+            background: darkblue;
+        }
+
+        #div2 {
+            color: darkolivegreen !important;
+            background: darkturquoise;
+        }
+
+        .div1 h1 {
+            color: green;
+        }
+
+        #container>ul {
+            border: 3px solid black;
+            background: indigo;
+            color: yellowgreen;
+        }
+
+        div[title="div2"] {
+            background-color: navy !important;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body id="body" class="body">
+    <div title="div1" class="div1" id="div1">
+        <h1>Div1 Başlık1</h1>
+        <p>Bu div1 başlık birdir. Lorem ipsum dolor sit amet.</p>
+        <h2>Div1 Baslık2</h2>
+        <p title="hatırlatma">Bu div1 baslık ikidir. Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+    <p style="color:white; background: black; text-align: center;">NABER</p>
+    <div title="div2" class="div2" id="div2">
+        <h1>Div2 Baslık1</h1>
+        <p>Bu div2 başlık birdir. Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <h2>Div2 Baslık2</h2>
+        <p>Bu div2 baslık ikidir. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptas?</p>
+    </div>
+    <div title="div3" id="container">
+        <ul>
+            <li> 1
+                <ul>
+                    <li> 1.1 </li>
+                </ul>
+            </li>
+            <li> 2 </li>
+            <li> 3 </li>
+            <li> 4 </li>
+        </ul>
+        <ul>
+            <li>5</li>
+        </ul>
+    </div>
+</body>
+
+</html>
