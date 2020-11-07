@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İLETİŞİM FORUMU SAYFASI</title>
+    <style>
+        body {
+            background-color: rgb(5, 207, 207);
+        }
+
+        #isim {
+            position: absolute;
+            left: 70px;
+            top: 7px;
+        }
+
+        #soyisim {
+            position: absolute;
+            left: 70px;
+            top: 43px;
+        }
+
+
+        ul {
+            background-color: goldenrod;
+            width: 225px;
+        }
+
+        #baskent {
+            width: 267px;
+            background-color: #000;
+            color: turquoise;
+        }
+
+        input#kayıtol {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="https://www.google.com" method="POST">
+        <span style="background-color:yellow;" id="isim2">İsim:</span>
+        <input style="background-color: black; color:white" type="text" name="isim" id="isim"
+            placeholder="İsminizi Giriniz">
+        <br><br>
+
+        <span style="background-color:#f50;">Soyisim:</span>
+        <input style="background-color: black; color:white" type="text" name="soyisim" id="soyisim"
+            placeholder="Soyisminizi Giriniz">
+        <br><br>
+
+        <span style="background-color:#f04;">Sevdiğiniz Spor:</span>
+        <input type="checkbox" name="futbol" id="futbol">Futbol
+        <input type="checkbox" name="basketbol" id="basketbol">Basketbol
+        <input type="checkbox" name="voleybol" id="voleybol">Voleybol
+        <br><br>
+
+        <span style="background:rgb(167, 85, 243);">Cinsiyet:</span>
+        <input type="radio" name="gender" id="radioerkek" value="erkek">Erkek
+        <input type="radio" name="gender" id="radiokadın" value="kadın">Kadın
+        <br><br>
+
+        <span style="border: 2px solid red; background-color: black; color: white;;">Güvenlik Sorusu:</span> 
+        <ul>
+            <li>
+                <p>Türkiye'nin başkenti neresidir?</p>
+            </li>
+        </ul>
+        <select name="baskent" id="baskent">
+            <option value="bos">Lütfen bir seçenek seçiniz!</option>
+            <option value="İstanbul">İstanbul</option>
+            <option value="Ankara">Ankara</option>
+            <option value="İzmir">İzmir</option>
+        </select>
+        <br><br>
+
+        <input type="submit" value="Kayıt Ol" id="kayıtol">
+
+    </form>
+
+</body>
+
+</html>
