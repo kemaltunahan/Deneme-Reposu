@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font-Size</title>
+
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        div.div1 {
+            background-color: blue;
+            height: 21rem;
+            width: 78rem;
+        }
+
+        div .div2 {
+            background-color: yellow;
+            height: 14rem;
+            width: 36rem;
+        }
+
+        div div .div3 {
+            background-color: red;
+            height: 7rem;
+            width: 18rem;
+        }
+
+        p {
+            font-size: 2em;
+            /*aslında bu 2 * 16px ten 32 px tir. */
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<!-- rem root emm dir ve kök dizinin font size sini alır
+ve bu root htmldir. default ayarda 16px dir değiştirlebilir. 
+em ise bir üst etiketin font size sidir. bunlara göre px ayarlanabilir.-->
+
+<body>
+    <div class="div1">
+        <div class="div2">
+            <div class="div3">
+
+            </div>
+        </div>
+    </div>
+
+    <p class="div1">Lorem ipsum dolor sit amet consectetur,
+        adipisicing elit. Aliquid magni dignissimos aut aspernatur,
+        nulla illum suscipit sit perspiciatis molestias, accusantium
+        iure eum ipsa facere porro, adipisci libero eaque laborum autem.
+    </p>
+
+
+</body>
+
+</html>
